@@ -1,0 +1,104 @@
+.contact {
+    width: 100%;
+    padding: 3rem;
+    background: linear-gradient(90deg, #f5f5f5cc, #f5f5f5cc), url(banner-bg.svg);
+    background-size: cover;
+}
+
+.contact .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact .container .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin: 20px 0px;
+}
+
+.contact .container .heading h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #eee;
+  
+}
+
+.contact .container .heading p {
+    max-width: 900px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: .8;
+    line-height: 2rem;
+}
+
+.contact .container .contact-info {
+    /* width: 900px; */
+    background-color: #fff;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 900px;
+}
+
+.contact-info div label {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 400;
+}
+
+.contact-info div input,
+textarea {
+    padding: .5rem 1rem;
+    outline: none;
+    border-radius: 5px;
+    background-color: #f7f8f9;
+    border: 1px solid #e8ecf4;
+}
+
+.contact-info .btn {
+    display: flex;
+    align-items: flex-end;
+}
+
+.contact-info .btn button {
+    padding: 10px 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #7843e9;
+    box-shadow: 0 5px 15px 0 #00000026;
+    cursor: pointer;
+    border: none;
+
+}
+@media  only screen and (max-width: 1024px) {
+    .contact{
+        padding: 2rem 1rem;
+    }
+    .contact-info div{
+        width: 100%;
+    }
+    .contact-info .btn button{
+        width: 100%;
+     
+    }
+    
+}
