@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/projects.css'
+import img1 from '/images/home.jpg'
+import img2 from '/images/image.png'
 const Projects = () => {
     return (
         <section className='projects' id='projects'>
@@ -10,14 +12,14 @@ const Projects = () => {
                 </div>
                 <div className='project-list'>
                     <div className='project'>
-                        <img src="home.jpg" alt="" />
+                        <img src={img1} alt="" />
                         <div className='title'>
                             <h4>Online job portal</h4>
                             <a href='https://github.com/Arunkumar-kb/online-job-portal' target='_blank' className='project-link'>GitHub</a>
                         </div>
                     </div>
                     <div className='project'>
-                        <img src="image.png" alt="" />
+                        <img src={img2} alt="" />
                         <div className='title'>
                             <h4>Cafe wild Beans</h4>
                             {/* <button>Github</button> */}

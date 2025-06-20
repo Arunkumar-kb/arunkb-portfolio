@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
 import '../styles/nav.css'
+import myImage from '/images/arunkumar.jpg'
 import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -13,7 +14,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className='nav-logo'>
-                <img src='arunkumar.jpg'></img>
+                <img src={myImage} alt='logo'></img>
                 <h3>ARUNKUMAR K B</h3>
             </div>
             <div className='nav-links' ref={navRef}>
