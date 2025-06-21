@@ -3,16 +3,17 @@ import '../styles/contact.css'
 import emailjs from '@emailjs/browser'
 const Contact = () => {
     const form = useRef();
+    const serviceId = import.meta.env.VITE_Email_Service_Id;     
+    const templateId = import.meta.env.VITE_Email_Template_Id;
+    const APIKey = import.meta.env.VITE_Email_API_Key;
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(form.current)
-        alert('submit');
         emailjs.sendForm(
-            'service_t2nvm18',//service id emailjs
-            'template_pnst93k',//template id 
+            serviceId,//service id emailjs
+            templateId,//template id 
             form.current,
-            'hLmpHqWePpHrMICVv'//api key
+            APIKey//api key
         )
             .then(
                 (result) => {
